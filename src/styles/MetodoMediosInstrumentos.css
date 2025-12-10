@@ -1,0 +1,377 @@
+.metodo-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f4f8 0%, #b3e0f2 100%);
+  padding: 30px 0;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.page-title {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title-line {
+  width: 150px;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  margin: 0 auto 15px;
+  border-radius: 2px;
+}
+
+.page-subtitle {
+  color: #3498db;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-left: 6px solid #3498db;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.section-icon {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.section-header h2 {
+  color: #2980b9;
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.approach-content {
+  margin-bottom: 40px;
+}
+
+.approach-content p {
+  color: #34495e;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.research-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.research-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #3498db;
+  transition: transform 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+}
+
+.research-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.research-card h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.research-card p {
+  color: #7f8c8d;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.research-methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.method-tag {
+  background: #3498db;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.data-collection-section {
+  margin: 50px 0;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.method-item {
+  display: flex;
+  align-items: flex-start;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3498db;
+}
+
+.method-number {
+  background: #3498db;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-right: 15px;
+  min-width: 40px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.method-details h4 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.method-details p {
+  color: #7f8c8d;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.justification-section {
+  margin: 50px 0;
+}
+
+.justification-content {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.methodology-intro {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.methodology-intro h3 {
+  color: #2980b9;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.methodology-intro p {
+  color: #34495e;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.justification-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.point-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.point-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.point-icon {
+  font-size: 1.5rem;
+  margin-right: 12px;
+}
+
+.point-header h4 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.point-card p {
+  color: #34495e;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.scope-limitations-section {
+  margin: 50px 0 20px;
+}
+
+.scope-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.scope-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.scope-card {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.scope-header {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.scope-header.positive {
+  background: linear-gradient(90deg, #27ae60, #229954);
+}
+
+.scope-header.negative {
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+.scope-header h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.scope-card ul {
+  padding: 25px;
+  margin: 0;
+}
+
+.scope-card li {
+  color: #34495e;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.scope-card li:before {
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.scope-card.positive li:before {
+  content: "✓";
+  color: #27ae60;
+}
+
+.scope-card.negative li:before {
+  content: "✗";
+  color: #e74c3c;
+}
+
+.scope-conclusion {
+  padding: 25px;
+  background: #e3f2fd;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+  margin-top: 30px;
+}
+
+.scope-conclusion p {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .content-card {
+    padding: 25px;
+  }
+  
+  .research-types {
+    grid-template-columns: 1fr;
+  }
+  
+  .method-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .justification-points {
+    grid-template-columns: 1fr;
+  }
+  
+  .scope-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .section-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

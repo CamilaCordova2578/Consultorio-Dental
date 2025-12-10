@@ -1,0 +1,168 @@
+.home-page {
+  padding: 20px;
+}
+
+.project-title {
+  text-align: center;
+  margin: 10px auto 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #007acc;
+  max-width: 1200px;
+  line-height: 1.4;
+}
+
+.description-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+}
+
+.description-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.description-section h4 {
+  text-align: justify;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* Sección Académica */
+.academic-section {
+  padding: 60px 20px 80px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.academic-header {
+  background: #e6f7ff;
+  border: 1px solid #00aaff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 5px 20px rgba(0, 170, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.umsa-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.course-info {
+  text-align: left;
+}
+
+.course-info p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #444;
+}
+
+.course-info strong {
+  color: #000;
+  font-weight: 700;
+}
+
+.team-title {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.team-list li {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  background: #f0faff;
+  border-left: 5px solid #00aaff;
+  border-radius: 8px;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.team-list li:hover {
+  background: #e6f7ff;
+  box-shadow: 0 2px 8px rgba(0, 170, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .description-carousel-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .description-section {
+    max-width: 100%;
+  }
+  
+  .academic-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .course-info {
+    text-align: center;
+  }
+  
+  .site-header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 20px;
+  }
+  
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* ===================== ESTILOS PARA PÁGINAS ===================== */
+.page-content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+  color: #007acc;
+  margin: 40px auto 30px;
+  padding: 10px 0;
+  border-bottom: 4px solid #00aaff;
+  width: fit-content;
+  max-width: 90%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}

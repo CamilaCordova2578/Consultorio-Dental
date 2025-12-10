@@ -1,0 +1,133 @@
+.main-nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 35px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 8px 0;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #00d5ff;
+  text-shadow: 0 0 8px rgba(0, 213, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Submenús - Ocultos por defecto */
+.submenu {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  min-width: 240px;
+  z-index: 1000;
+  list-style: none;
+  padding: 12px 0;
+  margin: 0;
+  animation: slideIn 0.25s ease-out;
+}
+
+/* Mostrar submenú cuando el padre tiene la clase 'active' */
+.nav-item.active > .submenu,
+.submenu li.active > .submenu {
+  display: block;
+}
+
+/* Posicionamiento de submenús */
+.submenu.level-1 {
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+}
+
+.submenu.level-2,
+.submenu.level-3 {
+  top: -12px;
+  left: 100%;
+  margin-left: 8px;
+}
+
+/* Items de submenú */
+.submenu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Estilos para enlaces y spans en submenús */
+.submenu a,
+.submenu span {
+  color: #2c3e50;
+  font-weight: 500;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  text-align: left;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+
+/* Ícono de flecha para items con sub-submenú */
+.submenu li:has(.submenu) > a::after,
+.submenu li:has(.submenu) > span::after {
+  content: "▸";
+  font-size: 12px;
+  margin-left: 10px;
+  color: #7f8c8d;
+}
+
+/* Efecto hover en items del submenú */
+.submenu a:hover,
+.submenu span:hover {
+  background: linear-gradient(90deg, rgba(0, 213, 255, 0.1) 0%, transparent 100%);
+  color: #007acc;
+  padding-left: 28px;
+  border-left-color: #00d5ff;
+}
+
+/* Separador visual entre items */
+.submenu li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

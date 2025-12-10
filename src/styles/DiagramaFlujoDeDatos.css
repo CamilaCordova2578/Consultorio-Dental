@@ -1,0 +1,813 @@
+/* ===================== DIAGRAMA DE FLUJO DE DATOS ===================== */
+
+.dfd-container {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Título principal */
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #007acc;
+  margin: 30px auto 40px;
+  padding: 15px 0;
+  border-bottom: 4px solid #00aaff;
+  width: fit-content;
+  max-width: 90%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de introducción */
+.intro-section {
+  background: linear-gradient(135deg, #e6f7ff 0%, #f0faff 100%);
+  border-radius: 25px;
+  padding: 40px;
+  margin: 40px auto;
+  box-shadow: 0 10px 30px rgba(0, 170, 255, 0.15);
+  border-left: 8px solid #007acc;
+}
+
+.intro-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.intro-icon {
+  font-size: 3.5rem;
+  color: #007acc;
+  background: white;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 170, 255, 0.3);
+}
+
+.intro-header h2 {
+  color: #007acc;
+  font-size: 2.2rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.intro-subtitle {
+  color: #666;
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.intro-content p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.intro-content strong {
+  color: #007acc;
+  font-weight: 700;
+}
+
+.levels-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.level-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 170, 255, 0.15);
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.level-card:hover {
+  transform: translateY(-10px);
+}
+
+.level-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.level-badge.primary {
+  background: linear-gradient(90deg, #007acc, #00aaff);
+}
+
+.level-badge.secondary {
+  background: linear-gradient(90deg, #6633cc, #8a2be2);
+}
+
+.level-card h4 {
+  color: #333;
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.level-card p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+}
+
+.level-count {
+  display: inline-block;
+  background: rgba(0, 170, 255, 0.1);
+  color: #007acc;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.arrow-icon {
+  font-size: 2rem;
+  color: #007acc;
+  opacity: 0.7;
+}
+
+/* Navegación por niveles */
+.levels-navigation {
+  margin: 60px 0;
+}
+
+.level-section {
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid #e6f7ff;
+}
+
+.level-section.expanded {
+  box-shadow: 0 15px 35px rgba(0, 170, 255, 0.2);
+  border-color: #00aaff;
+}
+
+.level-header {
+  background: linear-gradient(90deg, #007acc, #00aaff);
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.level-header:hover {
+  background: linear-gradient(90deg, #0066aa, #0099dd);
+}
+
+.level-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.level-icon {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.level-title h3 {
+  color: white;
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.graph-count {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.level-toggle {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.level-section.expanded .level-toggle {
+  transform: rotate(180deg);
+}
+
+/* Contenido del nivel */
+.level-content {
+  padding: 30px;
+  animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Selector de gráficos */
+.graph-selector {
+  margin-bottom: 30px;
+}
+
+.graph-selector h4 {
+  color: #007acc;
+  font-size: 1.4rem;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.graph-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.graph-tab {
+  background: #f0faff;
+  border: 2px solid #e6f7ff;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #007acc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.graph-tab:hover {
+  background: #e6f7ff;
+  transform: translateY(-3px);
+}
+
+.graph-tab.active {
+  background: #007acc;
+  color: white;
+  border-color: #007acc;
+  box-shadow: 0 5px 15px rgba(0, 170, 255, 0.3);
+}
+
+.tab-number {
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.graph-tab.active .tab-number {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.tab-text {
+  white-space: nowrap;
+}
+
+/* Visualizador de gráficos */
+.graph-viewer {
+  background: #f8fdff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 170, 255, 0.1);
+  border: 2px solid #e6f7ff;
+}
+
+.viewer-header {
+  background: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e6f7ff;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.graph-info {
+  flex: 1;
+}
+
+.graph-info h4 {
+  color: #007acc;
+  font-size: 1.6rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.graph-info p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.viewer-controls {
+  display: flex;
+  gap: 15px;
+}
+
+.control-btn {
+  background: #f0faff;
+  border: 2px solid #e6f7ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #007acc;
+  transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+  background: #007acc;
+  color: white;
+  transform: scale(1.1);
+}
+
+.control-btn.info-btn {
+  background: #fff0e6;
+  border-color: #ffe6d6;
+  color: #ff7700;
+}
+
+.control-btn.info-btn:hover {
+  background: #ff7700;
+  color: white;
+}
+
+/* Contenedor de imagen */
+.image-container {
+  position: relative;
+  padding: 30px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.dfd-image {
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.dfd-image:hover {
+  transform: scale(1.01);
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.zoom-hint {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.zoom-hint svg {
+  font-size: 1.2rem;
+}
+
+/* Navegación de gráficos */
+.graph-navigation {
+  background: white;
+  padding: 20px 30px;
+  border-top: 2px solid #e6f7ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #e6f7ff;
+  background: white;
+  color: #007acc;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-dot:hover {
+  background: #e6f7ff;
+  transform: scale(1.1);
+}
+
+.nav-dot.active {
+  background: #007acc;
+  color: white;
+  border-color: #007acc;
+  box-shadow: 0 3px 10px rgba(0, 170, 255, 0.3);
+}
+
+.nav-info {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Información sobre DFD */
+.dfd-info-section {
+  background: linear-gradient(135deg, #fff8e6 0%, #fff0cc 100%);
+  border-radius: 25px;
+  padding: 40px;
+  margin: 60px 0;
+  border-left: 8px solid #ffaa00;
+}
+
+.dfd-info-section h3 {
+  color: #cc8800;
+  font-size: 2rem;
+  margin: 0 0 40px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(255, 170, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+}
+
+.info-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.info-card h4 {
+  color: #cc8800;
+  font-size: 1.4rem;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.info-card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Guía de uso */
+.usage-guide {
+  background: linear-gradient(135deg, #f0fff0 0%, #e6ffe6 100%);
+  border-radius: 25px;
+  padding: 40px;
+  margin: 60px 0;
+  border-left: 8px solid #5cb85c;
+}
+
+.usage-guide h3 {
+  color: #5cb85c;
+  font-size: 2rem;
+  margin: 0 0 40px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.guide-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+  background: linear-gradient(135deg, #5cb85c, #4cae4c);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  box-shadow: 0 5px 15px rgba(92, 184, 92, 0.3);
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h4 {
+  color: #5cb85c;
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.step-content p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Leyenda de símbolos */
+.legend-section {
+  background: linear-gradient(135deg, #f0f0ff 0%, #e6e6ff 100%);
+  border-radius: 25px;
+  padding: 40px;
+  margin: 60px 0;
+  border-left: 8px solid #6633cc;
+}
+
+.legend-section h3 {
+  color: #6633cc;
+  font-size: 2rem;
+  margin: 0 0 40px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.symbols-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.symbol-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.symbol-shape {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #6633cc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6633cc;
+  flex-shrink: 0;
+}
+
+.symbol-shape.circle {
+  border-radius: 50%;
+}
+
+.symbol-shape.rectangle {
+  border: none;
+  font-size: 2.5rem;
+}
+
+.symbol-shape.parallel {
+  border: none;
+  font-size: 2.5rem;
+}
+
+.symbol-info h5 {
+  color: #6633cc;
+  font-size: 1.2rem;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.symbol-info p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+    padding: 10px 20px;
+  }
+  
+  .intro-section,
+  .dfd-info-section,
+  .usage-guide,
+  .legend-section {
+    padding: 25px;
+    margin: 30px 0;
+  }
+  
+  .intro-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .intro-icon {
+    font-size: 2.5rem;
+    padding: 15px;
+  }
+  
+  .intro-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .intro-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .levels-overview {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .arrow-icon {
+    transform: rotate(90deg);
+  }
+  
+  .level-header {
+    padding: 20px;
+  }
+  
+  .level-title h3 {
+    font-size: 1.4rem;
+  }
+  
+  .graph-count {
+    font-size: 0.8rem;
+  }
+  
+  .graph-tabs {
+    flex-direction: column;
+  }
+  
+  .graph-tab {
+    justify-content: center;
+  }
+  
+  .viewer-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .graph-info h4 {
+    font-size: 1.3rem;
+  }
+  
+  .image-container {
+    padding: 15px;
+    min-height: 300px;
+  }
+  
+  .dfd-image {
+    max-height: 400px;
+  }
+  
+  .zoom-hint {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+  
+  .graph-navigation {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .info-grid,
+  .symbols-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .step-content h4 {
+    font-size: 1.2rem;
+  }
+  
+  .symbol-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.level-section {
+  animation: fadeIn 0.5s ease;
+}
+
+.graph-viewer {
+  animation: fadeIn 0.6s ease;
+}
+
+.info-card {
+  animation: fadeIn 0.6s ease;
+  animation-fill-mode: both;
+}
+
+.info-card:nth-child(1) { animation-delay: 0.1s; }
+.info-card:nth-child(2) { animation-delay: 0.2s; }
+.info-card:nth-child(3) { animation-delay: 0.3s; }
+.info-card:nth-child(4) { animation-delay: 0.4s; }
